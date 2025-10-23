@@ -1,0 +1,10 @@
+<div *ngIf="isLoading()">Loading...</div>
+<div *ngIf="errorMsg()">{{ errorMsg() }}</div>
+
+<div class="books" *ngIf="!isLoading() && books().length > 0">
+  <div *ngFor="let book of books()" class="book-card">
+    <img [src]="book.thumbnail" alt="Book cover" />
+    <h3>{{ book.title }}</h3>
+    <p>{{ book.authors.join(', ') }}</p>
+  </div>
+</div>

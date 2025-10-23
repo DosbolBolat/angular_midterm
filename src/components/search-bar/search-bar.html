@@ -1,0 +1,9 @@
+<div class="search-container">
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    (input)="onSearch($event)"
+    placeholder="Search books..."
+    class="search-input"
+  />
+</div>

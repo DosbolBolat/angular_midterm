@@ -1,12 +1,15 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Header} from '../components/header/header';
+import { SearchBar } from '../components/search-bar/search-bar';
+import { BookList } from '../components/book-list/book-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [Header, SearchBar, BookList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('midterm');
+  protected readonly title = signal('BookFinder');
 }
