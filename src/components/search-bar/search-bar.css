@@ -18,3 +18,19 @@
   border-color: #283593;
   box-shadow: 0 0 6px rgba(63, 81, 181, 0.4);
 }
+
+.popular-btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #283593;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.popular-btn:hover {
+  background-color: #283593;
+}

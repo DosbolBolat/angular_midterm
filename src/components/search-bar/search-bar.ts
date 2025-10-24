@@ -29,4 +29,7 @@ export class SearchBar {
     const value = (event.target as HTMLInputElement).value;
     this.searchSubject.next(value);
   }
+  showPopularBooks() {
+    this.search.emit('Harry Potter');
+  }
 }
